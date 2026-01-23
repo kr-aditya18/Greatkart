@@ -15,6 +15,7 @@ load_dotenv(BASE_DIR / '.env')
 SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 ALLOWED_HOSTS = ['*']
+SITE_URL = "https://greatkart-hpiv.onrender.com"
 
 # --------------------------------------------------
 # APPLICATIONS
