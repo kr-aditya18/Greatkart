@@ -8,7 +8,8 @@ import json
 from store.models import Product
 from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
-
+from django.urls import reverse
+from django.conf import settings
 
 def payments(request):
     body = json.loads(request.body)
@@ -71,10 +72,16 @@ def payments(request):
 
     # Send order number and transaction id back to sendData method via JsonResponse
     data = {
-        'order_number': order.order_number,
-        'transID': payment.payment_id,
-    }
+    'redirect_url': f"{settings.SITE_URL}{reverse('order_complete')}?order_number={order.order_number}&payment_id={payment.payment_id}"
+}
+
     return JsonResponse(data)
+
+    # data = {
+    #     'order_number': order.order_number,
+    #     'transID': payment.payment_id,
+    # }
+    # return JsonResponse(data)
 
 def place_order(request, total=0, quantity=0,):
     current_user = request.user

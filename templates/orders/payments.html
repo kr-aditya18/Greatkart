@@ -195,12 +195,10 @@
 					})
 				  .then((response) => response.json())
 				  .then((data) => {
-						window.location.replace(
-							"{{ SITE_URL }}{% url 'order_complete' %}" +
-							"?order_number=" + data.order_number +
-							"&payment_id=" + data.transID
-						);
+						window.location.assign(data.redirect_url);
 					});
+
+
 				}
 			});
 		}
