@@ -1,0 +1,881 @@
+[
+{
+  "model": "category.category",
+  "pk": 1,
+  "fields": {
+    "category_name": "Shirts",
+    "slug": "shirts",
+    "description": "This is shirt category",
+    "cat_image": "photos/categories/shirts.jpg"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 2,
+  "fields": {
+    "category_name": "T-shirts",
+    "slug": "t-shirts",
+    "description": "This is T-shirt Category.",
+    "cat_image": "photos/categories/tshirts.jpg"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 3,
+  "fields": {
+    "category_name": "Shoes",
+    "slug": "shoes",
+    "description": "This is Shoe category.",
+    "cat_image": "photos/categories/shoes.png"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 4,
+  "fields": {
+    "category_name": "Jeans",
+    "slug": "jeans",
+    "description": "This is Jeans Category.",
+    "cat_image": "photos/categories/jeans.jpg"
+  }
+},
+{
+  "model": "category.category",
+  "pk": 5,
+  "fields": {
+    "category_name": "Jacket",
+    "slug": "jacket",
+    "description": "This is jacket category.",
+    "cat_image": "photos/categories/jackets.jpg"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 1,
+  "fields": {
+    "product_name": "ATX Jeans",
+    "slug": "atx-jeans",
+    "description": "Comfortable and durable jeans by Industry Giant ATX brand. Buy ATX jeans here and never regret.",
+    "price": 999,
+    "images": "photos/products/ATX-Jeans.jpg",
+    "stock": 6,
+    "is_available": true,
+    "category": 4,
+    "created_date": "2026-01-03T19:08:15.428Z",
+    "modified_date": "2026-01-15T12:14:50.686Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 2,
+  "fields": {
+    "product_name": "Jorden Basketball Shoes",
+    "slug": "jorden-basketball-shoes",
+    "description": "Best BasketBall shoes on this earth by jorden. Many Basketball athletes wear it for thier competitive matches. Buy it and level up your Basketball game",
+    "price": 10000,
+    "images": "photos/products/jordan-true-flight-basketball-shoes.jpg",
+    "stock": 1099,
+    "is_available": true,
+    "category": 3,
+    "created_date": "2026-01-03T19:10:27.953Z",
+    "modified_date": "2026-01-03T19:10:27.953Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 3,
+  "fields": {
+    "product_name": "Mavi Jeans",
+    "slug": "mavi-jeans",
+    "description": "Best jeans by MAVI. This jeans is strechable , comfortable and durable.",
+    "price": 599,
+    "images": "photos/products/Mavi_jeans.jpg",
+    "stock": 300,
+    "is_available": true,
+    "category": 4,
+    "created_date": "2026-01-03T19:11:38.791Z",
+    "modified_date": "2026-01-03T19:11:38.791Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 4,
+  "fields": {
+    "product_name": "Puma Ferrari Shoes",
+    "slug": "puma-ferrari-shoes",
+    "description": "Shoes by PUMA",
+    "price": 49999,
+    "images": "photos/products/Puma-Ferrari-Shoes_LIZMvnM.jpg",
+    "stock": 199,
+    "is_available": true,
+    "category": 3,
+    "created_date": "2026-01-03T19:12:20.713Z",
+    "modified_date": "2026-01-15T12:14:01.490Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 5,
+  "fields": {
+    "product_name": "US Polo Assn Jacket",
+    "slug": "us-polo-assn-jacket",
+    "description": "Populer Jacket among GENZ by US POLO.",
+    "price": 2999,
+    "images": "photos/products/US-Polo-Assn_Jacket.jpg",
+    "stock": 400,
+    "is_available": true,
+    "category": 5,
+    "created_date": "2026-01-03T19:13:18.029Z",
+    "modified_date": "2026-01-03T19:13:18.029Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 6,
+  "fields": {
+    "product_name": "Wrangler Shirts",
+    "slug": "wrangler-shirts",
+    "description": "This is not just another shirt, Wrangler shirt is what you are thriving for. Wear Wrangler shirt and impress your futureself.",
+    "price": 899,
+    "images": "photos/products/Wrangler-Shirt.jpg",
+    "stock": 500,
+    "is_available": true,
+    "category": 1,
+    "created_date": "2026-01-03T19:14:49.783Z",
+    "modified_date": "2026-01-03T19:14:49.783Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 7,
+  "fields": {
+    "product_name": "Great Tshirt",
+    "slug": "great-tshirt",
+    "description": "T-shirt by our own brand Great T-shirt.",
+    "price": 899,
+    "images": "photos/products/Great-Tshirt.jpg",
+    "stock": 30,
+    "is_available": true,
+    "category": 2,
+    "created_date": "2026-01-03T19:15:57.630Z",
+    "modified_date": "2026-01-10T17:39:55.091Z"
+  }
+},
+{
+  "model": "store.product",
+  "pk": 8,
+  "fields": {
+    "product_name": "RXN Blue Shirt",
+    "slug": "rxn-blue-shirt",
+    "description": "Blue shirt by RXN.",
+    "price": 199,
+    "images": "photos/products/Blue-Shirt.jpg",
+    "stock": 100,
+    "is_available": true,
+    "category": 1,
+    "created_date": "2026-01-03T19:17:37.378Z",
+    "modified_date": "2026-01-03T19:17:37.378Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 1,
+  "fields": {
+    "product": 1,
+    "variation_category": "color",
+    "variation_value": "Red",
+    "is_active": true,
+    "created_date": "2026-01-13T06:52:28.114Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 2,
+  "fields": {
+    "product": 1,
+    "variation_category": "color",
+    "variation_value": "Blue",
+    "is_active": true,
+    "created_date": "2026-01-13T06:52:51.086Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 3,
+  "fields": {
+    "product": 1,
+    "variation_category": "color",
+    "variation_value": "Black",
+    "is_active": true,
+    "created_date": "2026-01-13T06:53:00.700Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 4,
+  "fields": {
+    "product": 1,
+    "variation_category": "size",
+    "variation_value": "Small",
+    "is_active": true,
+    "created_date": "2026-01-13T07:10:55.850Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 5,
+  "fields": {
+    "product": 1,
+    "variation_category": "size",
+    "variation_value": "Medium",
+    "is_active": true,
+    "created_date": "2026-01-13T07:11:05.740Z"
+  }
+},
+{
+  "model": "store.variation",
+  "pk": 6,
+  "fields": {
+    "product": 1,
+    "variation_category": "size",
+    "variation_value": "Large",
+    "is_active": true,
+    "created_date": "2026-01-13T07:11:16.208Z"
+  }
+},
+{
+  "model": "store.productgallery",
+  "pk": 1,
+  "fields": {
+    "product": 1,
+    "image": "store/products/image13.jpg"
+  }
+},
+{
+  "model": "carts.cart",
+  "pk": 1,
+  "fields": {
+    "cart_id": "fxi7xjfj5kx3tpg16mwt7ts9n0gd1icf",
+    "date_added": null
+  }
+},
+{
+  "model": "carts.cart",
+  "pk": 2,
+  "fields": {
+    "cart_id": "wjeh7yichkkrcwwumsfh8063i0y3x6vb",
+    "date_added": null
+  }
+},
+{
+  "model": "carts.cart",
+  "pk": 3,
+  "fields": {
+    "cart_id": "0l970yjprktrsv71txubsit3wlynhwgk",
+    "date_added": null
+  }
+},
+{
+  "model": "carts.cart",
+  "pk": 4,
+  "fields": {
+    "cart_id": "rsza0ttka51lo68xy8iuo6bkjapm31me",
+    "date_added": null
+  }
+},
+{
+  "model": "carts.cart",
+  "pk": 5,
+  "fields": {
+    "cart_id": "i9g6eyoopaxo8dbwpkbo5j0560t5ffr5",
+    "date_added": null
+  }
+},
+{
+  "model": "carts.cart",
+  "pk": 6,
+  "fields": {
+    "cart_id": "7ayd5dw7xlou74ue1io5l9ueekfuoo8u",
+    "date_added": null
+  }
+},
+{
+  "model": "carts.cart",
+  "pk": 7,
+  "fields": {
+    "cart_id": "icsnmg39w4l9hz4653z3im5slolxuelo",
+    "date_added": null
+  }
+},
+{
+  "model": "carts.cart",
+  "pk": 8,
+  "fields": {
+    "cart_id": "l0ekbvjauxzjjrnj9hvoo94q07i3toae",
+    "date_added": null
+  }
+},
+{
+  "model": "carts.cart",
+  "pk": 9,
+  "fields": {
+    "cart_id": "otbr6zh65a7nlmsx0ypkqntlnv0wtcqx",
+    "date_added": null
+  }
+},
+{
+  "model": "carts.cart",
+  "pk": 10,
+  "fields": {
+    "cart_id": "jsjfiriypze0qwoyebw3v1w56sbannel",
+    "date_added": null
+  }
+},
+{
+  "model": "carts.cart",
+  "pk": 11,
+  "fields": {
+    "cart_id": "a2wvvnccbiqjz5b62oi08h3hx3vu98lr",
+    "date_added": null
+  }
+},
+{
+  "model": "carts.cart",
+  "pk": 12,
+  "fields": {
+    "cart_id": "7e7uuqq7md7ck1x7vvw3wpyc2zba7vit",
+    "date_added": null
+  }
+},
+{
+  "model": "carts.cart",
+  "pk": 13,
+  "fields": {
+    "cart_id": "slv3v6tx4y4mxcdt72pnbs1cu7t0sh7j",
+    "date_added": null
+  }
+},
+{
+  "model": "carts.cart",
+  "pk": 14,
+  "fields": {
+    "cart_id": "tojc49avlm5uuvybbeel5q2l471wd9kf",
+    "date_added": null
+  }
+},
+{
+  "model": "carts.cart",
+  "pk": 15,
+  "fields": {
+    "cart_id": "ml9i2ii0jz5x1d1n13t1ucnn79bk93cg",
+    "date_added": "2026-01-15"
+  }
+},
+{
+  "model": "accounts.account",
+  "fields": {
+    "password": "pbkdf2_sha256$870000$NRowsjX1YQLSESrsuDEAuA$sUPSLoB1cfpW0kaPrxrOq9LujGh5+ZgDpXBWI/JraMc=",
+    "first_name": "Aditya",
+    "last_name": "Verma",
+    "username": "Aditya",
+    "email": "vermaadiitya13678@gmail.com",
+    "phone_number": "",
+    "date_joined": "2026-01-03T18:26:21.536Z",
+    "last_login": "2026-01-23T11:34:15.069Z",
+    "is_admin": true,
+    "is_staff": true,
+    "is_active": true,
+    "is_superadmin": true
+  }
+},
+{
+  "model": "accounts.account",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$gFaneyBIV59ykV3kPsB9d8$M1bZwCx6s6mabgBjixmgbA5WG4xVlpRxNmK7JyPGmi4=",
+    "first_name": "Jhon",
+    "last_name": "Doe",
+    "username": "jhon.doe",
+    "email": "jhon.doe@gmail.com",
+    "phone_number": "123456789",
+    "date_joined": "2026-01-13T12:45:43.468Z",
+    "last_login": "2026-01-13T12:45:43.468Z",
+    "is_admin": false,
+    "is_staff": false,
+    "is_active": false,
+    "is_superadmin": false
+  }
+},
+{
+  "model": "accounts.account",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$lS8tpmLXDF9wkEYkINTZXS$XvUcLagrhgNhoWC9PQcoYDwO1R2rnwERTzHhKTxTKtI=",
+    "first_name": "Aditya",
+    "last_name": "Verma",
+    "username": "vermaadiitya13",
+    "email": "vermaadiitya13@gmail.com",
+    "phone_number": "077525646",
+    "date_joined": "2026-01-13T13:14:33.864Z",
+    "last_login": "2026-01-13T13:14:33.864Z",
+    "is_admin": false,
+    "is_staff": false,
+    "is_active": false,
+    "is_superadmin": false
+  }
+},
+{
+  "model": "accounts.account",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$gDQ0e1wKXvb4HFvkCXGC98$Cu3jz2JrureS7qwOhWvaBC9YCZmz16H+1fGYFwXcflc=",
+    "first_name": "Aditya",
+    "last_name": "Verma",
+    "username": "aditya123",
+    "email": "aditya123@gmail.com",
+    "phone_number": "12345678",
+    "date_joined": "2026-01-13T13:35:18.151Z",
+    "last_login": "2026-01-13T13:35:18.151Z",
+    "is_admin": false,
+    "is_staff": false,
+    "is_active": false,
+    "is_superadmin": false
+  }
+},
+{
+  "model": "accounts.account",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$AsQtJZNi2AuKPuUdNH5JCX$02MGLGzEFWSBkL/AGfng9T87h1SJ/pVxYZo1szCiuQw=",
+    "first_name": "ananya",
+    "last_name": "singh",
+    "username": "ananyasingh23",
+    "email": "ananyasingh23@gmail.com",
+    "phone_number": "234512345",
+    "date_joined": "2026-01-13T13:36:53.579Z",
+    "last_login": "2026-01-14T13:35:45.878Z",
+    "is_admin": false,
+    "is_staff": false,
+    "is_active": true,
+    "is_superadmin": false
+  }
+},
+{
+  "model": "accounts.account",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$9EbDQGtAjXGWCVMWj0FWpL$yQslHar/ANKOQrxMyL7h6VRKodpsx5H3MDc2N2+Fkig=",
+    "first_name": "Aditya",
+    "last_name": "Verma",
+    "username": "adityaverma13678",
+    "email": "adityaverma13678@gmail.com",
+    "phone_number": "088885854454",
+    "date_joined": "2026-01-13T15:05:53.390Z",
+    "last_login": "2026-01-13T15:05:53.390Z",
+    "is_admin": false,
+    "is_staff": false,
+    "is_active": false,
+    "is_superadmin": false
+  }
+},
+{
+  "model": "accounts.account",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$ar9mrwF3LTGeYFSFgGCJK3$+wORV65NvVksXwdpOGEROIy56kDlmmUTfRcDrmsgj0M=",
+    "first_name": "Aditya",
+    "last_name": "Verma",
+    "username": "adityaverma1366780",
+    "email": "adityaverma1366780@gmail.com",
+    "phone_number": "0775286578877",
+    "date_joined": "2026-01-13T15:12:05.356Z",
+    "last_login": "2026-01-13T15:12:05.356Z",
+    "is_admin": false,
+    "is_staff": false,
+    "is_active": false,
+    "is_superadmin": false
+  }
+},
+{
+  "model": "accounts.account",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$kFsItXTeU7HLblcShwasdB$QZmeLUfKWAP9XhUHg/wK6Y1AZG4s0T0gCtChfHp1L90=",
+    "first_name": "Aditya",
+    "last_name": "Verma",
+    "username": "vermaadiitya133678",
+    "email": "vermaadiitya133678@gmail.com",
+    "phone_number": "07752865379",
+    "date_joined": "2026-01-13T15:30:23.044Z",
+    "last_login": "2026-01-13T15:30:23.044Z",
+    "is_admin": false,
+    "is_staff": false,
+    "is_active": false,
+    "is_superadmin": false
+  }
+},
+{
+  "model": "accounts.account",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$q4a2ZZDcsLnrjoRCUYxLUr$exhQHfti0PGyTfyxQKMXVvX52e31uIYoDe/4lV5VhXk=",
+    "first_name": "Akshat",
+    "last_name": "Sharma",
+    "username": "adityaaverma534534",
+    "email": "adityaaverma534534@gmail.com",
+    "phone_number": "077528657777",
+    "date_joined": "2026-01-14T05:35:19.371Z",
+    "last_login": "2026-01-15T11:14:14.464Z",
+    "is_admin": false,
+    "is_staff": false,
+    "is_active": true,
+    "is_superadmin": false
+  }
+},
+{
+  "model": "accounts.account",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$Qdj7f2x8dw52IO8dhJRmI1$DGEa/h3DAiefA7YdNvvFwsP5DQ4lGhYqwMVh+oWg/t8=",
+    "first_name": "Sharad",
+    "last_name": "SIngh",
+    "username": "tihoti1724",
+    "email": "tihoti1724@gopicta.com",
+    "phone_number": "12345678",
+    "date_joined": "2026-01-15T10:37:31.340Z",
+    "last_login": "2026-01-15T10:37:58.499Z",
+    "is_admin": false,
+    "is_staff": false,
+    "is_active": true,
+    "is_superadmin": false
+  }
+},
+{
+  "model": "accounts.account",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$cdW5cU6DvV8enHhmPUv7zL$xsStQbUJSP4iQRBe1qlZDILpQhgdPGWdAMFRBo24Q/w=",
+    "first_name": "Deepak",
+    "last_name": "Modanwal",
+    "username": "modanwaldeepak353",
+    "email": "modanwaldeepak353@gmail.com",
+    "phone_number": "7752865379",
+    "date_joined": "2026-01-22T17:29:37.653Z",
+    "last_login": "2026-01-22T17:29:37.653Z",
+    "is_admin": false,
+    "is_staff": false,
+    "is_active": false,
+    "is_superadmin": false
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "adityaaverma534534@gmail.com"
+    ],
+    "address_line_1": "Knowledge park 2 greater Noida",
+    "address_line_2": "",
+    "profile_picture": "userprofile/avatar2.jpg",
+    "city": "Greater Noida",
+    "state": "Uttar Pradesh",
+    "country": "India"
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "tihoti1724@gopicta.com"
+    ],
+    "address_line_1": "",
+    "address_line_2": "",
+    "profile_picture": "default/default-user.jpg",
+    "city": "",
+    "state": "",
+    "country": ""
+  }
+},
+{
+  "model": "accounts.userprofile",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "modanwaldeepak353@gmail.com"
+    ],
+    "address_line_1": "",
+    "address_line_2": "",
+    "profile_picture": "default/default-user.jpg",
+    "city": "",
+    "state": "",
+    "country": ""
+  }
+},
+{
+  "model": "orders.orderproduct",
+  "pk": 1,
+  "fields": {
+    "order": 3,
+    "payment": 1,
+    "user": [
+      "vermaadiitya13678@gmail.com"
+    ],
+    "product": 1,
+    "quantity": 1,
+    "product_price": 999.0,
+    "ordered": true,
+    "created_at": "2026-01-14T15:20:06.603Z",
+    "updated_at": "2026-01-14T15:20:06.656Z",
+    "variations": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "orders.orderproduct",
+  "pk": 2,
+  "fields": {
+    "order": 4,
+    "payment": 2,
+    "user": [
+      "adityaaverma534534@gmail.com"
+    ],
+    "product": 1,
+    "quantity": 1,
+    "product_price": 999.0,
+    "ordered": true,
+    "created_at": "2026-01-15T06:21:27.902Z",
+    "updated_at": "2026-01-15T06:21:27.958Z",
+    "variations": [
+      2,
+      4
+    ]
+  }
+},
+{
+  "model": "orders.orderproduct",
+  "pk": 3,
+  "fields": {
+    "order": 4,
+    "payment": 2,
+    "user": [
+      "adityaaverma534534@gmail.com"
+    ],
+    "product": 1,
+    "quantity": 1,
+    "product_price": 999.0,
+    "ordered": true,
+    "created_at": "2026-01-15T06:21:28.007Z",
+    "updated_at": "2026-01-15T06:21:28.068Z",
+    "variations": [
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "orders.orderproduct",
+  "pk": 4,
+  "fields": {
+    "order": 4,
+    "payment": 2,
+    "user": [
+      "adityaaverma534534@gmail.com"
+    ],
+    "product": 1,
+    "quantity": 1,
+    "product_price": 999.0,
+    "ordered": true,
+    "created_at": "2026-01-15T06:21:28.104Z",
+    "updated_at": "2026-01-15T06:21:28.140Z",
+    "variations": [
+      1,
+      6
+    ]
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "adityaaverma534534@gmail.com"
+    ],
+    "payment": null,
+    "order_number": "202601141",
+    "first_name": "Aditya",
+    "last_name": "Verma",
+    "phone": "0775286",
+    "email": "adityaaverma534534@gmail.com",
+    "address_line_1": "Knowledge park 2 greater Noida",
+    "address_line_2": "",
+    "country": "India",
+    "state": "Uttar Pradesh",
+    "city": "Greater Noida",
+    "order_note": "Nothing Here",
+    "order_total": 1018.98,
+    "tax": 19.98,
+    "status": "New",
+    "ip": "127.0.0.1",
+    "is_ordered": false,
+    "created_at": "2026-01-14T14:26:43.120Z",
+    "updated_at": "2026-01-14T14:26:43.134Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "vermaadiitya13678@gmail.com"
+    ],
+    "payment": null,
+    "order_number": "202601142",
+    "first_name": "Aditya",
+    "last_name": "Verma",
+    "phone": "07757",
+    "email": "adityaaverma534534@gmail.com",
+    "address_line_1": "Knowledge park 2 greater Noida",
+    "address_line_2": "",
+    "country": "India",
+    "state": "Uttar Pradesh",
+    "city": "Greater Noida",
+    "order_note": "Dummy Note",
+    "order_total": 1018.98,
+    "tax": 19.98,
+    "status": "New",
+    "ip": "127.0.0.1",
+    "is_ordered": false,
+    "created_at": "2026-01-14T14:33:31.526Z",
+    "updated_at": "2026-01-14T14:33:31.542Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "vermaadiitya13678@gmail.com"
+    ],
+    "payment": 1,
+    "order_number": "202601143",
+    "first_name": "Aditya",
+    "last_name": "Verma",
+    "phone": "07757",
+    "email": "adityaaverma534534@gmail.com",
+    "address_line_1": "Knowledge park 2 greater Noida",
+    "address_line_2": "",
+    "country": "India",
+    "state": "Uttar Pradesh",
+    "city": "Greater Noida",
+    "order_note": "Dummy Note",
+    "order_total": 1018.98,
+    "tax": 19.98,
+    "status": "New",
+    "ip": "127.0.0.1",
+    "is_ordered": true,
+    "created_at": "2026-01-14T15:18:04.657Z",
+    "updated_at": "2026-01-14T15:20:06.589Z"
+  }
+},
+{
+  "model": "orders.order",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "adityaaverma534534@gmail.com"
+    ],
+    "payment": 2,
+    "order_number": "202601154",
+    "first_name": "Akshat",
+    "last_name": "Sharma",
+    "phone": "58662555",
+    "email": "adityaaverma534534@gmail.com",
+    "address_line_1": "Barabanki",
+    "address_line_2": "",
+    "country": "India",
+    "state": "Uttar Pradesh",
+    "city": "Greater Noida",
+    "order_note": "Smooth experience.",
+    "order_total": 3056.94,
+    "tax": 59.94,
+    "status": "New",
+    "ip": "127.0.0.1",
+    "is_ordered": true,
+    "created_at": "2026-01-15T06:16:39.710Z",
+    "updated_at": "2026-01-15T06:21:27.874Z"
+  }
+},
+{
+  "model": "orders.payment",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "vermaadiitya13678@gmail.com"
+    ],
+    "payment_id": "1XM01473CP385283W",
+    "payment_method": "PayPal",
+    "amount_paid": "1018.98",
+    "status": "COMPLETED",
+    "created_at": "2026-01-14T15:20:06.576Z"
+  }
+},
+{
+  "model": "orders.payment",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "adityaaverma534534@gmail.com"
+    ],
+    "payment_id": "71K2984668241062G",
+    "payment_method": "PayPal",
+    "amount_paid": "3056.94",
+    "status": "COMPLETED",
+    "created_at": "2026-01-15T06:21:27.854Z"
+  }
+},
+{
+  "model": "carts.cartitem",
+  "pk": 50,
+  "fields": {
+    "user": [
+      "ananyasingh23@gmail.com"
+    ],
+    "product": 1,
+    "cart": 14,
+    "quantity": 1,
+    "is_active": true,
+    "variations": [
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "store.reviewrating",
+  "pk": 1,
+  "fields": {
+    "product": 1,
+    "user": [
+      "vermaadiitya13678@gmail.com"
+    ],
+    "subject": "Another review",
+    "review": "Good Jeans",
+    "rating": 0.5,
+    "ip": "127.0.0.1",
+    "status": true,
+    "created_at": "2026-01-14T15:27:31.052Z",
+    "updated_at": "2026-01-14T15:29:10.385Z"
+  }
+},
+{
+  "model": "store.reviewrating",
+  "pk": 2,
+  "fields": {
+    "product": 1,
+    "user": [
+      "adityaaverma534534@gmail.com"
+    ],
+    "subject": "Fabric Quality",
+    "review": "Very good quality of cotton is used. Loving it !!!",
+    "rating": 5.0,
+    "ip": "127.0.0.1",
+    "status": true,
+    "created_at": "2026-01-15T07:02:38.297Z",
+    "updated_at": "2026-01-23T11:34:30.425Z"
+  }
+}
+]
