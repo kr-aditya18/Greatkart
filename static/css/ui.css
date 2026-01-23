@@ -1411,5 +1411,23 @@ a[class*=card]:hover .title {
   margin-right: 5px;
   display: block;
 }
+/* ================= IMAGE FORCE FIX ================= */
+.card-product-grid .img-wrap {
+  height: 220px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.card-product-grid .img-wrap img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 
 /*# sourceMappingURL=ui.css.map */
