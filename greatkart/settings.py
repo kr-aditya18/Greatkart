@@ -74,6 +74,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'greatkart.context_processors.site_url',
                 'category.context_processors.menu_links',
                 'carts.context_processors.counter',
             ],
