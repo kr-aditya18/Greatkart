@@ -35,7 +35,7 @@
     <div class="card card-product-grid">
         <div class="img-wrap">
             <a href="{{ product.get_url }}">
-                <img src="{{ product.images.url }}" alt="{{ product.product_name }}">
+                <img src="{{ product.images.url|cut:'http:' }}" alt="{{ product.product_name }}">
             </a>
         </div>
         <figcaption class="info-wrap">
