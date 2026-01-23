@@ -32,14 +32,19 @@
 <div class="row">
 	{% for product in products %}
 	<div class="col-md-3">
-		<div class="card card-product-grid">
-			<a href="{{ product.get_url }}" class="img-wrap"> <img src="{{ product.images.url }}"> </a>
-			<figcaption class="info-wrap">
-				<a href="{{ product.get_url }}" class="title">{{ product.product_name }}</a>
-				<div class="price mt-1">$ {{ product.price }}</div> <!-- price-wrap.// -->
-			</figcaption>
-		</div>
-	</div> <!-- col.// -->
+    <div class="card card-product-grid">
+        <div class="img-wrap">
+            <a href="{{ product.get_url }}">
+                <img src="{{ product.images.url }}" alt="{{ product.product_name }}">
+            </a>
+        </div>
+        <figcaption class="info-wrap">
+            <a href="{{ product.get_url }}" class="title">{{ product.product_name }}</a>
+            <div class="price mt-1">$ {{ product.price }}</div>
+        </figcaption>
+    </div>
+</div>
+
 	{% endfor %}
 </div> <!-- row.// -->
 
