@@ -58,6 +58,7 @@ def payments(request):
     CartItem.objects.filter(user=request.user).delete()
 
     # Send order recieved email to customer
+    # Send order recieved email to customer
     mail_subject = 'Thank you for your order!'
     message = render_to_string('orders/order_recieved_email.html', {
         'user': request.user,
@@ -65,7 +66,8 @@ def payments(request):
     })
     to_email = request.user.email
     send_email = EmailMessage(mail_subject, message, to=[to_email])
-    send_email.send()
+    send_email.send(fail_silently=True)
+
 
     # Send order number and transaction id back to sendData method via JsonResponse
     data = {
