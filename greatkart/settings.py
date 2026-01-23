@@ -83,14 +83,31 @@ AUTH_USER_MODEL = 'accounts.Account'
 #     }
 # }
 
+# import dj_database_url
+
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}",
+#         conn_max_age=600
+#     )
+# }
+
+import os
 import dj_database_url
 
-DATABASES = {
-    'default': dj_database_url.config(
-        default=f"sqlite:///{BASE_DIR / 'db.sqlite3'}",
-        conn_max_age=600
-    )
-}
+if os.getenv("DATABASE_URL"):
+    # Production (Render / Postgres)
+    DATABASES = {
+        'default': dj_database_url.config(conn_max_age=600)
+    }
+else:
+    # Local (SQLite)
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
