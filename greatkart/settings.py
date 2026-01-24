@@ -20,7 +20,7 @@ SECRET_KEY = config('SECRET_KEY', default='unsafe-secret-key')
 DEBUG = config('DEBUG', default=True, cast=bool)
 
 # Allow all hosts temporarily (EB health checks)
-ALLOWED_HOSTS = ['django-greatkart-env.eba-rcugcuma.ap-south-1.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['*']
 
 
 # =========================
