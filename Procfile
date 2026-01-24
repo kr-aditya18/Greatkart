@@ -1,1 +1,1 @@
-web: python manage.py migrate --noinput && python manage.py loaddata data.json && python manage.py collectstatic --noinput && gunicorn greatkart.wsgi
+web: gunicorn greatkart.wsgi:application --bind 0.0.0.0:$PORT
