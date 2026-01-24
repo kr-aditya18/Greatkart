@@ -14,13 +14,13 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 # =========================
 
 # SECRET KEY (must NOT crash if env var missing)
-SECRET_KEY = config('SECRET_KEY', default='unsafe-eb-temp-secret-key')
+SECRET_KEY = config('SECRET_KEY', default='unsafe-secret-key')
 
 # DEBUG (keep True for now to avoid EB crash)
 DEBUG = config('DEBUG', default=True, cast=bool)
 
 # Allow all hosts temporarily (EB health checks)
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['django-greatkart-env.eba-rcugcuma.ap-south-1.elasticbeanstalk.com']
 
 
 # =========================
