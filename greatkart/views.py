@@ -1,10 +1,10 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from store.models import Product, ReviewRating
 
 def home(request):
-    products = Product.objects.all().filter(is_available=True).order_by('created_date')
+    products = Product.objects.filter(is_available=True).order_by('created_date')
 
-    # Get the reviews
     reviews = None
     for product in products:
         reviews = ReviewRating.objects.filter(product_id=product.id, status=True)
@@ -14,8 +14,6 @@ def home(request):
         'reviews': reviews,
     }
     return render(request, 'home.html', context)
-
-# from django.http import HttpResponse
 
 def health_check(request):
     return HttpResponse("OK")
