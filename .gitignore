@@ -23,6 +23,7 @@ media/
 venv/
 env/
 ENV/
+cleanenv/
 
 # =========================
 # Python

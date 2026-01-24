@@ -8,8 +8,7 @@ import json
 from store.models import Product
 from django.core.mail import EmailMessage
 from django.template.loader import render_to_string
-from django.urls import reverse
-from django.conf import settings
+
 
 def payments(request):
     body = json.loads(request.body)
@@ -59,7 +58,6 @@ def payments(request):
     CartItem.objects.filter(user=request.user).delete()
 
     # Send order recieved email to customer
-    # Send order recieved email to customer
     mail_subject = 'Thank you for your order!'
     message = render_to_string('orders/order_recieved_email.html', {
         'user': request.user,
@@ -67,21 +65,14 @@ def payments(request):
     })
     to_email = request.user.email
     send_email = EmailMessage(mail_subject, message, to=[to_email])
-    send_email.send(fail_silently=True)
-
+    send_email.send()
 
     # Send order number and transaction id back to sendData method via JsonResponse
     data = {
-    'redirect_url': f"{settings.SITE_URL}{reverse('order_complete')}?order_number={order.order_number}&payment_id={payment.payment_id}"
-}
-
+        'order_number': order.order_number,
+        'transID': payment.payment_id,
+    }
     return JsonResponse(data)
-
-    # data = {
-    #     'order_number': order.order_number,
-    #     'transID': payment.payment_id,
-    # }
-    # return JsonResponse(data)
 
 def place_order(request, total=0, quantity=0,):
     current_user = request.user

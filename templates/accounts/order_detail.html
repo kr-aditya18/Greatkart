@@ -3,6 +3,7 @@
 
 {% block content %}
 
+
 <div class="container" style="margin: 0 auto;width: 50%;padding: 50px;background: #f1f1f1;margin-top: 50px;margin-bottom: 50px;">
     <div class="row invoice row-printable">
         <div class="col-md-12">
@@ -54,7 +55,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                          {% for item in order_detail%}
+                                          {% for item in order_detail %}
                                             <tr>
                                                 <td>{{item.product.product_name}}
                                                   <p class="text-muted small">
