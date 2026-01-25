@@ -172,7 +172,8 @@ ANYMAIL = {
     "BREVO_API_KEY": config("BREVO_API_KEY"),
 }
 
-DEFAULT_FROM_EMAIL = "vermaaditya13678@gmail.com"
+DEFAULT_FROM_EMAIL = "vermaadiitya13678@gmail.com"
+
 
 
 # =========================
